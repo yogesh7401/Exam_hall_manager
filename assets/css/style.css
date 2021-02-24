@@ -1,0 +1,87 @@
+body {
+    background-color: #2a9d8f;
+}
+.login {
+    font-family: 'Nunito', sans-serif;
+    border-radius: 10px;
+    background-color: white;
+    width: 400px;
+	height: 320px;	
+	position: absolute;
+	top:0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+    padding-top: 10px;
+	margin: auto;
+    padding-left: 60px;
+    padding-right: 60px;
+}
+.title {
+    color: #e76f51;
+}
+.field {
+    display: flex;
+    flex-flow: column-reverse;
+}
+label, input {
+    transition: all 0.2s;
+    touch-action: manipulation;
+}
+label {
+    margin-bottom: 8px;
+    font-size: 14px;
+    color: #666;
+} 
+input {
+    font-size: 1em;
+    border: 0;
+    border-bottom: 1px solid #000;
+    font-family: inherit;
+    -webkit-appearance: none;
+    border-radius: 0;
+    padding: 0;
+    cursor: text;
+}
+input:focus {
+    outline: 0;
+    border-bottom: 1px solid #666;
+}
+input:placeholder-shown + label {
+    cursor: text;
+    max-width: 66.66%;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    transform-origin: left bottom;
+    transform: translate(0, 2.125rem) scale(1.5);
+}
+::-webkit-input-placeholder {
+    opacity: 0;
+    transition: inherit;
+}
+input:focus::-webkit-input-placeholder {
+    opacity: 1;
+}
+input:not(:placeholder-shown) + label,
+input:focus + label {
+    transform: translate(0, 0) scale(1);
+    cursor: pointer;
+}
+.btn:hover {
+    color: white;
+}
+@media screen and (max-width: 450px) {
+    .login {
+        width: 300px;
+        padding-left: 30px;
+        padding-right: 30px;
+    }
+}
+@media screen and (max-width: 330px) {
+    .login {
+        width: 250px;
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+}
