@@ -23,11 +23,11 @@ include('sessionvalidate.php')
         <hr>
         <form action="../action.php" method="POST">
             <div class="field mt-2">
-                <input type="email" name="email" id="fullname" placeholder="example@xxx.com">
+                <input type="email" name="email" id="fullname" placeholder="example@xxx.com" required>
                 <label for="fullname">User email</label>
             </div>
             <div class="field mt-1">
-                <input type="password" name="password" id="password" placeholder="xxxxxxxxx">
+                <input type="password" name="password" id="password" placeholder="xxxxxxxxx" required>
                 <label for="password">Password</label>
             </div>
             <input type="submit" value="Login" name="adminLogin" class="btn mt-5 btn-outline-success w-100">

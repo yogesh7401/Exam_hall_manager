@@ -1,5 +1,16 @@
 body {
-    background-color: #2a9d8f;
+    background-color: #2a9d8f ;
+    font-family: 'Nunito', sans-serif;
+
+}
+.innerbox {
+    font-family: 'Nunito', sans-serif;
+    background: white;
+    border-radius: 10px;
+    padding-bottom: 30px;
+}
+.custom-container {
+    width: 90%
 }
 .login {
     font-family: 'Nunito', sans-serif;

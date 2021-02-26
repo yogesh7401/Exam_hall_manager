@@ -25,7 +25,7 @@ include('sessionvalidate.php');
         <hr>
         <form action="./action.php" method="POST">
             <div class="field mt-3">
-                <input type="text" name="reg_no" id="fullname" placeholder="1813141058XXX">
+                <input type="text" name="reg_no" id="fullname" placeholder="1813141058XXX" required>
                 <label for="fullname">Register number</label>
             </div>
             <input type="submit" value="Get Seating" name="studentLogin" class="btn mt-5 btn-outline-success w-100">
