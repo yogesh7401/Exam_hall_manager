@@ -1,12 +1,12 @@
 <?php
 include('config.php');
-// error_reporting(0);
+error_reporting(0);
 session_start();
 
 // student login
     if(isset($_POST['studentLogin'])) {
         $myusername = mysqli_real_escape_string($conn,$_POST['reg_no']); 
-        $sql = "SELECT * FROM students WHERE reg_no = '$myusername'";     
+        $sql = "SELECT * FROM allotment WHERE reg_no = '$myusername'";     
         $result = $conn->query($sql);
         $count = mysqli_num_rows($result);
 		
